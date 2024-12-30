@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout est l'enfant direct unique de ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fond3"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+
+        <!-- Promotion Section with Free Delivery Text -->
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Search and Order"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp">
+
+            <ImageView
+                android:id="@+id/img_promo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:background="@color/Orange"
+                android:src="@drawable/liv3" />
+
+            <!-- Text Overlay: "Livraison gratuite" placed to the right -->
+
+            <TextView
+                android:id="@+id/tv_promo_messag"
+                android:layout_width="258dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="90dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Composez la salade de vos rêves, fraîcheur garantie !"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_promo_message"
+                android:layout_width="193dp"
+                android:layout_height="95dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Livraison Gratuite !"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Search Section -->
+        <Button
+            android:id="@+id/btn_view_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Voir le Panier"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/panier"
+        android:drawablePadding="8dp" />
+
+
+
+
+        <!-- Categories Section -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/ll_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:paddingHorizontal="8dp">
+                <!-- Category: Salades -->
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/icon_salades"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/salad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:gravity="center"
+                        android:text="Salades"
+                        android:textColor="@color/Argent"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Category: Omelettes -->
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/icon_omelettes"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/omelette" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Omelette"
+                        android:textColor="@color/Argent"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Category: Crêpes Salées -->
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/icon_crepes_sales"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cre" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crêpes Salées"
+                        android:textColor="@color/Argent"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Category: Crêpes Sucrées -->
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/icon_crepes_sucres"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/crepe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crêpes Sucrées"
+                        android:textColor="@color/Argent"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Recommended Section -->
+        <TextView
+            android:id="@+id/tv_recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:paddingTop="10dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_recommended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</ScrollView>

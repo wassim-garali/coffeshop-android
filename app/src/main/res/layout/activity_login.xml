@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fond3"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <!-- Logo superposé -->
+            <ImageView
+                android:id="@+id/logoOverlayImage"
+                android:layout_width="412dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logocalories" />
+        </FrameLayout>
+
+        <!-- Champs Email et Mot de Passe pour le Login -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="15dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="15dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <!-- Bouton de login -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startButton"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_chanfrin"
+                android:onClick="login"
+                android:text="Login"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- Texte pour "Créer un compte" sous le bouton -->
+            <TextView
+                android:id="@+id/textCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onCreateAccountClicked"
+                android:paddingHorizontal="16dp"
+                android:text="Créer un compte !"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

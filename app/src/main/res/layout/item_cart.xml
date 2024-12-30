@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="10dp">
+
+    <!-- Image de l'article -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+    <!-- Remplacez ceci par l'image dynamique -->
+
+    <!-- Informations de l'article -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- Nom de l'article -->
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Description de l'article -->
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <!-- Quantité de l'article -->
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end" />
+
+    <!-- Prix de l'article -->
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$9.76"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="end" />
+
+</LinearLayout>

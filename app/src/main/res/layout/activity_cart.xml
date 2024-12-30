@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Header for Cart -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre Panier"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/Orange"
+        android:padding="16dp" />
+
+    <!-- RecyclerView to show the cart items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="18sp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="8dp" />
+    <!-- Button to proceed with the order -->
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_brown"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="@color/Moutarde"
+        android:text="Commander" />
+
+    <!-- Total price display -->
+
+
+    <!-- Cancel Button to go back to MainActivity -->
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_brown"
+        android:backgroundTint="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Retourner" />
+</LinearLayout>

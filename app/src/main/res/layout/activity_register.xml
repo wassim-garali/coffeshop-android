@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fond3"
+    android:padding="16dp">
+
+    <!-- Section titre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <!-- Titre principal -->
+        <TextView
+            android:id="@+id/textGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créez votre compte"
+            android:textColor="@color/Moutarde"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <!-- Sous-titre -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C'est facile et rapide !"
+            android:textColor="@color/dark_brown"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <!-- Formulaire d'inscription -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="24dp">
+
+        <!-- Champ Nom -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="Nom complet"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Champ Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Champ Mot de passe -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Champ Confirmer mot de passe -->
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="textPassword"
+            android:hint="Confirmer mot de passe"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <!-- Bouton d'inscription -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Créer un compte"
+        android:backgroundTint="@color/Moutarde"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Lien retour à la connexion -->
+    <TextView
+        android:id="@+id/textBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="onBackToLoginClicked"
+        android:padding="12dp"
+        android:text="Retour à la connexion"
+        android:textColor="@color/dark_brown"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
